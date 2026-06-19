@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1001",
+    "question": "Was ist HTML?",
+    "answer": "HTML beschreibt die Struktur einer Webseite.",
+    "category": "Webentwicklung"
+  },
+  {
+    "id": "1002",
+    "question": "Was macht CSS?",
+    "answer": "CSS bestimmt das Aussehen einer Webseite, zum Beispiel Farben, Abstaende und Layout.",
+    "category": "Webentwicklung"
+  },
+  {
+    "id": "1003",
+    "question": "Wofuer wird JavaScript im Browser genutzt?",
+    "answer": "JavaScript macht eine Webseite interaktiv und kann Inhalte dynamisch veraendern.",
+    "category": "JavaScript"
+  },
+  {
+    "id": "1781788272296",
+    "question": "Was ist die Hauptstadt von Mexico?",
+    "answer": "Mexico City.",
+    "category": "Geographie"
+  },
+  {
+    "id": "1781788485143",
+    "question": "In welchem Land liegt die Stadt Patras?",
+    "answer": "Griechenland.",
+    "category": "Geographie"
+  },
+  {
+    "id": "1781804318172",
+    "question": "Was ist die Hauptstadt von Japan?",
+    "answer": "Tokyo",
+    "category": "Geographie"
+  }
+]

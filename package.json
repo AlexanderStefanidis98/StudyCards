@@ -1,0 +1,13 @@
+{
+  "name": "studycards",
+  "version": "1.0.0",
+  "description": "Eine einfache Lernkarten-App mit HTML, CSS, JavaScript, Node.js, Express und JSON-Speicherung.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

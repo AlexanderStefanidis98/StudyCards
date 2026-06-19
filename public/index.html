@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyCards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Lernkarten-App</p>
+      <h1>StudyCards</h1>
+    </div>
+    <div class="summary">
+      <span id="cardCount">0</span>
+      <small>Karten</small>
+    </div>
+  </header>
+
+  <main class="app-layout">
+    <section class="panel form-panel" aria-labelledby="newCardTitle">
+      <h2 id="newCardTitle">Neue Lernkarte</h2>
+      <form id="cardForm">
+        <label for="question">Frage</label>
+        <textarea id="question" name="question" rows="3" required placeholder="z. B. Was ist Express?"></textarea>
+
+        <label for="answer">Antwort</label>
+        <textarea id="answer" name="answer" rows="4" required placeholder="z. B. Ein Framework fuer Node.js."></textarea>
+
+        <label for="category">Kategorie</label>
+        <input id="category" name="category" type="text" placeholder="z. B. Backend">
+
+        <button type="submit">Lernkarte speichern</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="panel learn-panel" aria-labelledby="learnTitle">
+      <div class="section-heading">
+        <div>
+          <h2 id="learnTitle">Lernmodus</h2>
+          <p>Frage lesen, Antwort aufdecken, weiter zur naechsten Karte.</p>
+        </div>
+        <button id="nextCardButton" type="button" class="secondary-button">Naechste</button>
+      </div>
+
+      <article id="studyCard" class="study-card">
+        <p class="card-label">Frage</p>
+        <h3 id="studyQuestion">Noch keine Karte ausgewaehlt</h3>
+        <p id="studyAnswer" class="answer hidden"></p>
+        <button id="showAnswerButton" type="button">Antwort anzeigen</button>
+      </article>
+    </section>
+
+    <section class="panel list-panel" aria-labelledby="listTitle">
+      <div class="section-heading">
+        <div>
+          <h2 id="listTitle">Alle Lernkarten</h2>
+          <p>Uebersicht ueber gespeicherte Fragen.</p>
+        </div>
+        <select id="categoryFilter" aria-label="Kategorie filtern">
+          <option value="all">Alle Kategorien</option>
+        </select>
+      </div>
+
+      <div id="cardsList" class="cards-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
